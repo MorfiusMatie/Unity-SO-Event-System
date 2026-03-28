@@ -6,7 +6,7 @@ A decoupled scriptableobject event system for unity. zero singletons, zero hard 
 A decoupled, data-driven event architecture for Unity.
 
 ### The Problem
-Standard Unity architecture turns into spaghetti code fast. Your `Player.cs` takes damage and needs to update the health bar, so it calls `UIManager.Instance`. Now your player is hard-coupled to your UI. If you delete the UI canvas to test something, your game crashes. 
+Standard Unity setups often lead to tightly coupled dependencies. Your `Player.cs` takes damage and needs to update the health bar, so it calls `UIManager.Instance`. Now your player is hard-coupled to your UI. If you delete the UI canvas to test something, your game crashes. 
 
 Singletons create hidden dependencies. Standard C# events make designer iteration slow.
 
